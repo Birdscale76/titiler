@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: titiler
+    env: docker
+    plan: free
+    dockerfilePath: ./dockerfiles/Dockerfile.app
+    autoDeploy: true
+    region: oregon   # or choose closest to your users
+    ports:
+      - 10000
